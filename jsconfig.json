@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "checkJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true
+  },
+  "include": ["./**/*.js"],
+  "exclude": ["node_modules", "client"]
+}

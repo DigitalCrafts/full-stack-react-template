@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "target": "es2020",
+    "checkJs": true,
+    "baseUrl": "./",
+    "jsx": "react-jsxdev"
+  },
+  "include": ["./**/*.js"],
+  "exclude": ["./node_modules"]
+}
