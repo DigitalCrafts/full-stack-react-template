@@ -17,6 +17,7 @@
     "db:reset": "npx sequelize db:drop; npx sequelize db:create && npm run db:migrate && npm run db:seed"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "concurrently": "^7.2.2",
     "connect-session-sequelize": "^7.1.4",
     "cookie-parser": "~1.4.4",
@@ -33,11 +34,14 @@
   "devDependencies": {
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1"
   },
   "nodemonConfig": {
-    "ignore": ["client/*"]
+    "ignore": [
+      "client/*"
+    ]
   }
 }

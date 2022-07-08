@@ -4,8 +4,9 @@
     "target": "es2020",
     "checkJs": true,
     "baseUrl": "./",
-    "jsx": "react-jsxdev"
+    "jsx": "react-jsxdev",
+    "moduleResolution": "node"
   },
-  "include": ["./**/*.js"],
+  "include": ["./**/*"],
   "exclude": ["./node_modules"]
 }
