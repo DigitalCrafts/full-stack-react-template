@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "cd client && npm run build",
+    "postinstall": "cd client && npm install && npm run build",
     "dev": "concurrently \"npm:dev:*\" -c green,blue",
     "dev:server": "DEBUG=server nodemon --ignore ./client/ ./bin/www",
     "dev:client": "cd client && npm start",

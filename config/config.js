@@ -2,6 +2,8 @@
 // .env file at the root of the project. Only make changes here if you're sure
 // you know what you are doing
 
+require('dotenv').config()
+
 module.exports = {
   development: {
     username: process.env.DB_USERNAME || 'postgres',
