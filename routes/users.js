@@ -29,7 +29,7 @@ router.post('/login', async (req, res) => {
     return res.status(400).json({ error: 'email incorrect' })
   }
   // if password is invalid, send error
-  const passwordValid = bcrypt.compare(password, user.password)
+  const passwordValid = await bcrypt.compare(password, user.password)
   if (!passwordValid) {
     return res.status(400).json({ error: 'invalid password' })
   }
